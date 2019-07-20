@@ -15,7 +15,7 @@
     "cors": "^2.8.5",
     "dotenv": "^2.0.0",
     "express": "^4.13.4",
-    "knex": "^0.11.7",
+    "knex": "^0.19.0",
     "knex-logger": "^0.1.0",
     "knex-postgis": "^0.8.1",
     "morgan": "^1.7.0",
