@@ -1,4 +1,3 @@
-
 exports.seed = function(knex) {
   // Deletes ALL existing entries
   return knex('users').del()
@@ -116,5 +115,27 @@ exports.seed = function(knex) {
           city: "Toronto"
         }
       ]);
-    });
+    })
+    .then(function () {
+    console.info("------> Updating home coordinates in users");
+      // update user records with home locations
+      return knex.raw(
+        'UPDATE users AS u SET \
+          home_coords = c.home_coords \
+        FROM (VALUES \
+            (ST_SetSRID(ST_MakePoint(-79.3049261, 43.6779947), 4326), 1), \
+            (ST_SetSRID(ST_MakePoint(-79.4160545, 43.7295661), 4326), 2), \
+            (ST_SetSRID(ST_MakePoint(-79.3983443, 43.6878955), 4326), 3), \
+            (ST_SetSRID(ST_MakePoint(-79.3035411, 43.669918), 4326), 4), \
+            (ST_SetSRID(ST_MakePoint(-79.2919107, 43.6711546), 4326), 5), \
+            (ST_SetSRID(ST_MakePoint(-79.3052774, 43.6743661), 4326), 6), \
+            (ST_SetSRID(ST_MakePoint(-79.3222937, 43.6817611), 4326), 7), \
+            (ST_SetSRID(ST_MakePoint(-79.2958054, 43.6687056), 4326), 8), \
+            (ST_SetSRID(ST_MakePoint(-79.3074703, 43.6728731), 4326), 9), \
+            (ST_SetSRID(ST_MakePoint(-79.3702709, 43.6602683), 4326), 10) \
+        ) as c(home_coords, id) \
+        where c.id = u.id'
+      )
+    })
+
 };
