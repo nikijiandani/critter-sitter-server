@@ -14,7 +14,8 @@ const knexLogger  = require('knex-logger');
 const cors        = require('cors');
 
 // Seperated Routes for each Resource
-const usersRoutes = require("./routes/users");
+const usersRoute = require("./routes/users");
+const messagesRoute = require("./routes/messages");
 
 app.use(cors());
 
@@ -27,7 +28,8 @@ app.use(morgan('dev'));
 app.use(knexLogger(knex));
 
 // Mount all resource routes
-app.use("/api/users", usersRoutes(knex));
+app.use("/api/users", usersRoute(knex));
+app.use("/api/messages", messagesRoute(knex));
 
 // Home page
 app.get("/", (req, res) => {
