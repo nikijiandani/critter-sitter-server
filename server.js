@@ -15,6 +15,7 @@ const cors        = require('cors');
 
 // Seperated Routes for each Resource
 const usersRoute = require("./routes/users");
+// const singleUserRoute = require("./routes/singleUser")
 const messagesRoute = require("./routes/messages");
 
 app.use(cors());
@@ -29,6 +30,7 @@ app.use(knexLogger(knex));
 
 // Mount all resource routes
 app.use("/api/users", usersRoute(knex));
+// app.use("/api/singleUser", singleUserRoute(knex));
 app.use("/api/messages", messagesRoute(knex));
 
 // Home page
