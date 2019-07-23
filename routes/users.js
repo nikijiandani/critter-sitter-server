@@ -13,13 +13,21 @@ module.exports = (knex) => {
       SELECT u.id AS user_id, u.first_name, u.last_name, u.email, u.phone_number, \
         u.avatar, u.postal_code, u.street_address, u.city, \
         ST_X(u.home_coords) AS home_long, ST_Y(u.home_coords) AS home_lat, \
-        (SELECT json_agg(sq) FROM \
+        (SELECT json_agg(spt) FROM \
           (SELECT upt.pet_type_id, pt.name \
             FROM users_pet_types AS upt\
               INNER JOIN pet_types AS pt \
               ON upt.pet_type_id=pt.id \
-            WHERE upt.user_id = u.id) sq \
+            WHERE upt.user_id = u.id) spt \
           ) as sitter_pet_types, \
+        (SELECT json_agg(rev) FROM \
+            (SELECT rv.from_id, ru.first_name, rv.created_at, rv.rating, rv.content \
+              FROM reviews AS rv \
+                INNER JOIN users AS ru \
+                ON rv.from_id=ru.id \
+            WHERE rv.to_id = u.id \
+            ORDER BY rv.created_at DESC) rev \
+        ) as reviews, \
         (SELECT json_agg(im) FROM \
           (SELECT img.image \
             FROM user_images img \
