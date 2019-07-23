@@ -20,6 +20,11 @@ module.exports = (knex) => {
               ON upt.pet_type_id=pt.id \
             WHERE upt.user_id = u.id) sq \
           ) as sitter_pet_types, \
+        (SELECT json_agg(im) FROM \
+          (SELECT img.image \
+            FROM user_images img \
+            WHERE img.user_id = u.id) im \
+          ) as images, \
           (SELECT ROUND(AVG(r.rating),1) AS avg_rating \
             FROM reviews AS r \
             WHERE r.to_id = u.id \
@@ -30,20 +35,20 @@ module.exports = (knex) => {
 
     const qryParams = []
 
-    // return single user (ex http://localhost:8080/api/users?id=8)
+    // returns a single user (ex http://localhost:8080/api/users?id=8)
     if (req.query.id) {
       qryString += " AND u.id = ? "
       qryParams.push(req.query.id)
     }
 
-    // return users with specified role (ex http://localhost:8080/api/users?role=1)
+    // returns users with specified role (ex http://localhost:8080/api/users?role=1)
     // 1=sitter, 2=customer
     if (req.query.role) {
       qryString += " AND u.role = ? "
       qryParams.push(req.query.role)
     }
 
-    // return users within x metres of another user
+    // returns users within x metres of another user
     // (ex http://localhost:8080/api/users?dist_from_id=1&dist_metres=1000)
     // note geometry fields are being coverted to geography for ST_DWithin
     if(req.query.dist_from_id && req.query.dist_metres) {
