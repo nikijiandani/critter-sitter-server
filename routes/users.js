@@ -28,21 +28,42 @@ module.exports = (knex) => {
       FROM users AS u \
       WHERE 1 = 1 "
 
+    const qryParams = []
+
     // return single user (ex http://localhost:8080/api/users?id=8)
     if (req.query.id) {
-      qryString += " AND u.id = " + req.query.id
+      qryString += " AND u.id = ? "
+      qryParams.push(req.query.id)
     }
 
     // return users with specified role (ex http://localhost:8080/api/users?role=1)
     // 1=sitter, 2=customer
     if (req.query.role) {
-      qryString += " AND u.role = " + req.query.role
+      qryString += " AND u.role = ? "
+      qryParams.push(req.query.role)
+    }
+
+    // return users within x metres of another user
+    // (ex http://localhost:8080/api/users?dist_from_id=1&dist_metres=1000)
+    // note geometry fields are being coverted to geography for ST_DWithin
+    if(req.query.dist_from_id && req.query.dist_metres) {
+      qryString += " AND ST_DWithin( \
+        ST_MakePoint(ST_X(u.home_coords), ST_Y(u.home_coords))::geography, \
+        ST_MakePoint( \
+          (SELECT ST_X(ux.home_coords) FROM users AS ux WHERE ux.id = ?), \
+          (SELECT ST_Y(uy.home_coords) FROM users AS uy WHERE uy.id = ?) \
+        )::geography, \
+        ? \
+      )"
+      qryParams.push(req.query.dist_from_id) // user id for longitude
+      qryParams.push(req.query.dist_from_id) // user id for latitude
+      qryParams.push(req.query.dist_metres) // distance from user
     }
 
     let qry = knex
-      .raw(qryString)
+      .raw(qryString, qryParams)
 
-    console.log(qry.toString())
+    console.log(qryParams)
 
     qry.then((results) => {
         res.json(results.rows);
