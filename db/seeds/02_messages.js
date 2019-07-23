@@ -44,6 +44,22 @@ exports.seed = function(knex) {
           read: false,
           created_at: new Date('December 17, 1995 03:24:00'),
           updated_at: new Date('January 17, 2019 10:24:00')
+        },
+        {
+          from_id: 1,
+          to_id: 3,
+          content: "Hello! How did it go last weekend? I sat a cute cat last weekend. It was awesome!!!",
+          read: false,
+          created_at: new Date('December 17, 1995 03:24:00'),
+          updated_at: new Date('January 17, 2019 10:24:00')
+        },
+        {
+          from_id: 3,
+          to_id: 1,
+          content: "Hey! It was awesome!!!",
+          read: false,
+          created_at: new Date('December 17, 1995 03:24:00'),
+          updated_at: new Date('January 17, 2019 10:24:00')
         }
       ]);
     });
