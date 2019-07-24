@@ -11,8 +11,8 @@ module.exports = (knex) => {
       knex("reviews AS r")
         .select("u.first_name AS from_name", "r.from_id", "r.content", "r.rating", "r.created_at")
         .leftJoin("users AS u", "r.from_id", "=", "u.id")
-        .where("to_id", "=", req.query.profile_id)
-        .orderBy("created_at", "desc")
+        .where("r.to_id", "=", req.query.profile_id)
+        .orderBy("r.created_at", "desc")
         .asCallback(function(err, results){
           if(err) {
             console.log(err);
