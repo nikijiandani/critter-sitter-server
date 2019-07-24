@@ -15,7 +15,7 @@ module.exports = (knex) => {
       const qryString = " \
         SELECT u.first_name, \
         (SELECT json_agg(msg) FROM \
-          (SELECT mt.from_id, ut.first_name, ut.last_name, mt.read, mt.created_at \
+          (SELECT mt.from_id, ut.first_name, ut.last_name, mt.content, mt.read, mt.created_at \
             FROM messages AS mt \
               LEFT JOIN users AS ut \
               ON mt.from_id = ut.id \
@@ -24,7 +24,7 @@ module.exports = (knex) => {
             ) msg \
           ) as to_me, \
           (SELECT json_agg(msg) FROM \
-            (SELECT mf.to_id, uf.first_name, uf.last_name, mf.read, mf.created_at \
+            (SELECT mf.to_id, uf.first_name, uf.last_name, mf.content, mf.read, mf.created_at \
             FROM messages AS mf \
               LEFT JOIN users AS uf \
               ON mf.to_id = uf.id \
@@ -41,7 +41,7 @@ module.exports = (knex) => {
       console.log(qry.toString())
 
       qry.then((results) => {
-        res.json(results.rows);
+        res.json(results.rows[0]);  //Doing 0 because there will be only one User (primary key)
       });
 
     } else {
