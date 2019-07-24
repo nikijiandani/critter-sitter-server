@@ -44,5 +44,37 @@ module.exports = (knex) => {
 
   });
 
+  router.post("/", (req, res) => {
+
+    // can test with curl as below:
+    // curl --request POST --data  '{"from_id":2, "to_id":8, "content":"zzz"}' http://localhost:8080/api/messages --header "Content-Type: application/json"
+
+    if(req.body.from_id && req.body.to_id && req.body.content) {
+
+      const insertMessage = {
+        from_id: req.body.from_id,
+        to_id: req.body.to_id,
+        content: req.body.content,
+        read: false,
+        created_at: new Date(),
+        updated_at: new Date()
+      }
+      knex("messages")
+        .insert(insertMessage)
+        .asCallback(function(err, results){
+          if(err) {
+            console.log(err);
+          } else {
+            res.json({InsertedCount: results.rowCount});
+          }
+        })
+
+    } else {
+      res.json({InsertedCount: 0});
+
+    }
+
+  });
+
   return router;
 }

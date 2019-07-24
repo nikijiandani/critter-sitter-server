@@ -29,7 +29,7 @@ module.exports = (knex) => {
   router.post("/", (req, res) => {
 
     // can test with curl as below:
-    // curl --request POST --data  "{"from_id":2, "to_id":8, "rating":1, "content":"zzz"}" http://localhost:8080/api/reviews --header "Content-Type: application/json"
+    // curl --request POST --data  '{"from_id":2, "to_id":8, "rating":1, "content":"zzz"}' http://localhost:8080/api/reviews --header "Content-Type: application/json"
 
     if(req.body.from_id && req.body.to_id && req.body.content) {
 
@@ -37,6 +37,7 @@ module.exports = (knex) => {
         from_id: req.body.from_id,
         to_id: req.body.to_id,
         content: req.body.content,
+        rating: req.body.rating,
         created_at: new Date(),
         updated_at: new Date()
       }
