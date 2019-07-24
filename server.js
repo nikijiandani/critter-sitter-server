@@ -12,10 +12,18 @@ const knex        = require("knex")(knexConfig[ENV]);
 const morgan      = require('morgan');
 const knexLogger  = require('knex-logger');
 const cors        = require('cors');
+const bodyParser  = require("body-parser");
+
+// this must be before other app.use statements
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+app.use(bodyParser.json())
 
 // Seperated Routes for each Resource
 const usersRoute = require("./routes/users");
 const messagesRoute = require("./routes/messages");
+const reviewsRoute = require("./routes/reviews");
 
 app.use(cors());
 
@@ -30,6 +38,7 @@ app.use(knexLogger(knex));
 // Mount all resource routes
 app.use("/api/users", usersRoute(knex));
 app.use("/api/messages", messagesRoute(knex));
+app.use("/api/reviews", reviewsRoute(knex));
 
 // Home page
 app.get("/", (req, res) => {
