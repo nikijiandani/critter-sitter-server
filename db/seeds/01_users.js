@@ -10,10 +10,11 @@ exports.seed = function(knex) {
           last_name: "Maggio",
           email: "Dudley5@gmail.com",
           phone_number: "416-299-4341",
-          avatar: "https://api.adorable.io/avatars/111/Dudley5@gmail.com.png",
+          avatar: "https://randomuser.me/api/portraits/men/27.jpg",
           postal_code: "M4L 1V3",
           street_address: "500 Kingston Rd",
-          city: "Toronto"
+          city: "Toronto",
+          bio: "When I go on vacation, I miss my animals more than my friends!"
         },
         {
           role: 2,
@@ -21,10 +22,11 @@ exports.seed = function(knex) {
           last_name: "Heathcote",
           email: "Lester35@yahoo.ca",
           phone_number: "416-021-1358",
-          avatar: "https://api.adorable.io/avatars/111/Lester35@yahoo.ca.png",
+          avatar: "https://randomuser.me/api/portraits/men/87.jpg",
           postal_code: "M5M 1W4",
           street_address: "315 St Germain Ave",
-          city: "Toronto"
+          city: "Toronto",
+          bio: "I love all animals!"
         },
         {
           role: 2,
@@ -32,10 +34,11 @@ exports.seed = function(knex) {
           last_name: "Oberbrunner",
           email: "Lionel.Oberbrunner3@yahoo.ca",
           phone_number: "647-689-1178",
-          avatar: "https://api.adorable.io/avatars/111/Lionel.Oberbrunner3@yahoo.ca.png",
+          avatar: "https://randomuser.me/api/portraits/men/4.jpg",
           postal_code: "M4V 2Z2",
           street_address: "48 St Clair Ave W",
-          city: "Toronto"
+          city: "Toronto",
+          bio: "When I go on vacation, I miss my animals more than my friends!"
         },
         {
           role: 1,
@@ -43,10 +46,11 @@ exports.seed = function(knex) {
           last_name: "Schmidt",
           email: "Jude63@hotmail.com",
           phone_number: "416-699-4610",
-          avatar: "https://api.adorable.io/avatars/111/Jude63@hotmail.com.png",
+          avatar: "https://randomuser.me/api/portraits/men/66.jpg",
           postal_code: "M4L 1H8",
           street_address: "1974 Queen St E",
-          city: "Toronto"
+          city: "Toronto",
+          bio: "What do dogs eat at the movies? Pup-eroni pizza and pup-corn!"
         },
         {
           role: 1,
@@ -54,10 +58,11 @@ exports.seed = function(knex) {
           last_name: "Witting",
           email: "Haley4@yahoo.ca",
           phone_number: "416-698-9608",
-          avatar: "https://api.adorable.io/avatars/111/Haley4@yahoo.ca.png",
+          avatar: "https://randomuser.me/api/portraits/women/8.jpg",
           postal_code: "M4E 3B4",
           street_address: "42 Balsam Ave",
-          city: "Toronto"
+          city: "Toronto",
+          bio: "No matter how bad of a day you have, pets are there to greet you and make you feel better."
         },
         {
           role: 2,
@@ -65,10 +70,11 @@ exports.seed = function(knex) {
           last_name: "Homenick",
           email: "Simeon_Homenick15@hotmail.com",
           phone_number: "416-699-3028",
-          avatar: "https://api.adorable.io/avatars/111/Simeon_Homenick15@hotmail.com.png",
+          avatar: "https://randomuser.me/api/portraits/men/3.jpg",
           postal_code: "M4L 3T6",
           street_address: "258 Waverley Rd",
-          city: "Toronto"
+          city: "Toronto",
+          bio: "I love animals because they're amazing!"
         },
         {
           role: 1,
@@ -76,10 +82,11 @@ exports.seed = function(knex) {
           last_name: "Huel",
           email: "Reid52@yahoo.ca",
           phone_number: "416-698-9098",
-          avatar: "https://api.adorable.io/avatars/111/Reid52@yahoo.ca.png",
+          avatar: "https://randomuser.me/api/portraits/men/90.jpg",
           postal_code: "M4C 3H9",
           street_address: "101 Hillingdon Ave",
-          city: "Toronto"
+          city: "Toronto",
+          bio: "Until one has loved an animal, a part of one's soul remains unawakened."
         },
         {
           role: 1,
@@ -87,10 +94,11 @@ exports.seed = function(knex) {
           last_name: "Satterfield",
           email: "Zoe50@hotmail.com",
           phone_number: "416-699-0791",
-          avatar: "https://api.adorable.io/avatars/111/Zoe50@hotmail.com.png",
+          avatar: "https://randomuser.me/api/portraits/women/69.jpg",
           postal_code: "M4E 2W4",
           street_address: "24 Hammersmith Ave",
-          city: "Toronto"
+          city: "Toronto",
+          bio: "My cat loves to drive my car. It's a Furrari!"
         },
         {
           role: 3,
@@ -98,10 +106,11 @@ exports.seed = function(knex) {
           last_name: "Collins",
           email: "Darren.Collins87@gmail.com",
           phone_number: "416-698-5039",
-          avatar: "https://api.adorable.io/avatars/111/Darren.Collins87@gmail.com.png",
+          avatar: "https://randomuser.me/api/portraits/men/43.jpg",
           postal_code: "M4L 3R8",
           street_address: "102 Elmer Ave",
-          city: "Toronto"
+          city: "Toronto",
+          bio: "Pigs are the best! They're playful, friendly, sensitive, and intelligent animals. And they will play ball with you!"
         },
         {
           role: 1,
@@ -109,15 +118,15 @@ exports.seed = function(knex) {
           last_name: "Zulauf",
           email: "Camren.Zulauf19@gmail.com",
           phone_number: "416-929-4598",
-          avatar: "https://api.adorable.io/avatars/111/Camren.Zulauf19@gmail.com.png",
+          avatar: "https://randomuser.me/api/portraits/men/12.jpg",
           postal_code: "M5A 2X5",
           street_address: "304 Berkeley St",
-          city: "Toronto"
+          city: "Toronto",
+          bio: "The truth I do not stretch or shove When I state that the dog is full of love. I’ve also found, by actual test, A wet dog is the lovingest."
         }
       ]);
     })
     .then(function () {
-    console.info("------> Updating home coordinates in users");
       // update user records with home locations
       return knex.raw(
         'UPDATE users AS u SET \

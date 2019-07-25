@@ -7,19 +7,123 @@ exports.seed = function(knex) {
       return knex('user_images').insert([
         {
           user_id: 1,
-          image: "https://assurance-chien-et-chat.com/wp-content/uploads/2019/04/_139_Animal-de-compagnie-Wikipedia-Assurance-pour-Chien.jpg"
+          image: "https://placedog.net/500/400?id=27"
         },
         {
           user_id: 1,
-          image: "https://trupanion.com/-/media/trupanion/images/hero/tablet/hero-dog-cat-tablet.jpg"
+          image: "https://placedog.net/500/400?id=28"
+        },
+        {
+          user_id: 1,
+          image: "https://placedog.net/500/400?id=1"
         },
         {
           user_id: 2,
-          image: "https://i.pinimg.com/736x/70/0d/87/700d870295e07e92412bd8e88560351f--blue-macaws-blue-gold.jpg"
+          image: "https://placedog.net/500/400?id=29"
         },
         {
           user_id: 2,
-          image: "https://www.thesprucepets.com/thmb/_38eJ8mJ2EHkwi20NxFYg6OB3U4=/2576x2576/smart/filters:no_upscale()/close-up-of-gold-and-blue-macaw-perching-on-tree-962288862-5b50073e46e0fb0037c23c23.jpg"
+          image: "https://placedog.net/500/400?id=30"
+        },
+        {
+          user_id: 2,
+          image: "https://placedog.net/500/400?id=2"
+        },
+        {
+          user_id: 3,
+          image: "https://placedog.net/500/400?id=3"
+        },
+        {
+          user_id: 3,
+          image: "https://placedog.net/500/400?id=4"
+        },
+        {
+          user_id: 3,
+          image: "https://placedog.net/500/400?id=5"
+        },
+        {
+          user_id: 4,
+          image: "https://placedog.net/500/400?id=6"
+        },
+        {
+          user_id: 4,
+          image: "https://placedog.net/500/400?id=7"
+        },
+        {
+          user_id: 4,
+          image: "https://placedog.net/500/400?id=8"
+        },
+        {
+          user_id: 5,
+          image: "https://placedog.net/500/400?id=9"
+        },
+        {
+          user_id: 5,
+          image: "https://placedog.net/500/400?id=10"
+        },
+        {
+          user_id: 5,
+          image: "https://placedog.net/500/400?id=11"
+        },
+        {
+          user_id: 6,
+          image: "https://placedog.net/500/400?id=12"
+        },
+        {
+          user_id: 6,
+          image: "https://placedog.net/500/400?id=13"
+        },
+        {
+          user_id: 6,
+          image: "https://placedog.net/500/400?id=14"
+        },
+        {
+          user_id: 7,
+          image: "https://placedog.net/500/400?id=15"
+        },
+        {
+          user_id: 7,
+          image: "https://placedog.net/500/400?id=16"
+        },
+        {
+          user_id: 7,
+          image: "https://placedog.net/500/400?id=17"
+        },
+        {
+          user_id: 8,
+          image: "https://placedog.net/500/400?id=18"
+        },
+        {
+          user_id: 8,
+          image: "https://placedog.net/500/400?id=19"
+        },
+        {
+          user_id: 8,
+          image: "https://placedog.net/500/400?id=20"
+        },
+        {
+          user_id: 9,
+          image: "https://placedog.net/500/400?id=21"
+        },
+        {
+          user_id: 9,
+          image: "https://placedog.net/500/400?id=22"
+        },
+        {
+          user_id: 9,
+          image: "https://placedog.net/500/400?id=23"
+        },
+        {
+          user_id: 10,
+          image: "https://placedog.net/500/400?id=24"
+        },
+        {
+          user_id: 10,
+          image: "https://placedog.net/500/400?id=25"
+        },
+        {
+          user_id: 10,
+          image: "https://placedog.net/500/400?id=26"
         }
       ]);
     });
