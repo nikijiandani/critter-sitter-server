@@ -22,7 +22,7 @@ exports.seed = function(knex) {
           icon: "🐰"
         },
         {
-          name: "Porcupine",
+          name: "Hedgehog",
           icon: "🦔"
         },
       ]);
