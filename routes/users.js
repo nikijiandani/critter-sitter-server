@@ -10,11 +10,11 @@ module.exports = (knex) => {
     // start w/ all users (ex http://localhost:8080/api/users)
     // json_agg returns pet types as a nested object in the json result
     let qryString = " \
-      SELECT u.id AS user_id, u.first_name, u.last_name, u.email, u.phone_number, \
+      SELECT u.id AS user_id, u.first_name, u.last_name, u.bio, u.email, u.phone_number, \
         u.avatar, u.postal_code, u.street_address, u.city, \
         ST_X(u.home_coords) AS home_long, ST_Y(u.home_coords) AS home_lat, \
         (SELECT json_agg(spt) FROM \
-          (SELECT upt.pet_type_id, pt.name \
+          (SELECT upt.pet_type_id, pt.name, pt.icon \
             FROM users_pet_types AS upt\
               INNER JOIN pet_types AS pt \
               ON upt.pet_type_id=pt.id \
