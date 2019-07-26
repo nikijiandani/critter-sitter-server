@@ -8,7 +8,7 @@ exports.seed = function(knex) {
         {
           from_id: 1,   // Dudley
           to_id: 2,     // Lester
-          content: "Super responsive! My dog loved her walks with Lester. Lester is reliable, friendly, and timely. I’ve rebooked him many times and won’t hesitate to book again in the future.",
+          content: "Super responsive! My pet loved Lester. Lester is reliable, friendly, and timely. I’ve rebooked him many times and won’t hesitate to book again in the future.",
           rating: 5,
           created_at: new Date('July 18, 2019 05:24:00'),
           updated_at: new Date('July 18, 2019 05:24:00')
@@ -16,7 +16,7 @@ exports.seed = function(knex) {
         {
           from_id: 2,   // Lester
           to_id: 4,     // Jude
-          content: "I sat Jude's puppy last weekend when he was away. Had a good time with the critter",
+          content: "I sat Jude's pet last weekend when he was away. Had a good time with the critter.",
           rating: 4,
           created_at: new Date('July 19, 2019 07:45:00'),
           updated_at: new Date('July 19, 2019 07:45:00')
@@ -32,15 +32,15 @@ exports.seed = function(knex) {
         {
           from_id: 6,   // Simeon
           to_id: 8,     // Zoe
-          content: "We were treated like royalty!",
+          content: "I sat Zoe's pet last weekend when she was away. Had a good time with the critter.",
           rating: 4,
           created_at: new Date('July 17, 2019 11:35:00'),
           updated_at: new Date('July 17, 2019 11:35:00')
         },
         {
-          from_id: 1,
+          from_id: 3,
           to_id: 2,
-          content: "Clawford S. Turkeyforth was a great guest who highly respected house rules as well as my neighborhood. Also he cleaned up the bedroom same as it was at check in. Highly recommended critter.",
+          content: "We were treated like royalty!",
           rating: 3,
           created_at: new Date('July 24, 2019 11:35:00'),
           updated_at: new Date('July 24, 2019 11:35:00')
@@ -48,7 +48,7 @@ exports.seed = function(knex) {
         {
           from_id: 1,
           to_id: 3,
-          content: "It was a pleasure to welcome Binky. He was very nice and more, very discreet, clean and respectful during his stay. He is very welcome next time!",
+          content: "Binky loved Lionel! Highly recommended sitter! A++++",
           rating: 2,
           created_at: new Date('July 20, 2019 11:35:00'),
           updated_at: new Date('July 20, 2019 11:35:00')
@@ -56,7 +56,7 @@ exports.seed = function(knex) {
         {
           from_id: 1,
           to_id: 4,
-          content: "I had the pleasure to host Paws. She made a real effort to leave the premises as clean as when she arrived. Would love to have her back!",
+          content: "I had the pleasure to host Kitty Kitty Kitty. She made a real effort to leave the premises as clean as when she arrived. Would love to have her back!",
           rating: 3,
           created_at: new Date('July 17, 2019 11:35:00'),
           updated_at: new Date('July 17, 2019 11:35:00')
@@ -64,7 +64,7 @@ exports.seed = function(knex) {
         {
           from_id: 1,
           to_id: 5,
-          content: "It was a pleasure hosting Mr. Wiffles. He left the apartment clean and tidy and was very mindful of the place! Sincerely and warmly recommended!",
+          content: "It was a pleasure hosting Chippers and Pippers. They left the apartment clean and tidy! Sincerely and warmly recommended!",
           rating: 5,
           created_at: new Date('July 18, 2019 11:35:00'),
           updated_at: new Date('July 18, 2019 11:35:00')
@@ -72,7 +72,7 @@ exports.seed = function(knex) {
         {
           from_id: 2,
           to_id: 3,
-          content: "Lammy was very nice, polite and respectful of our home and belongings. You are welcome back anytime!",
+          content: "Lester was very nice, polite and respectful of our home. You are welcome to sit our critter anytime!",
           rating: 4,
           created_at: new Date('July 17, 2019 11:35:00'),
           updated_at: new Date('July 17, 2019 11:35:00')
@@ -80,7 +80,7 @@ exports.seed = function(knex) {
         {
           from_id: 2,
           to_id: 4,
-          content: "Scooby followed the rules of the apartment well and was kind. I recommend Scooby to other sitters. I welcome him anytime. Thank you Scooby.",
+          content: "Kitty Kitty Kitty followed the rules of the apartment well and was kind. I recommend her to other sitters. I welcome him anytime. Thank you Scooby.",
           rating: 3,
           created_at: new Date('July 19, 2019 11:35:00'),
           updated_at: new Date('July 19, 2019 11:35:00')
@@ -96,7 +96,7 @@ exports.seed = function(knex) {
         {
           from_id: 2,
           to_id: 6,
-          content: "Mr. Whiskers was an amazing guest. I wish they all were like him. He left my home immaculately clean. I recommend him to all sitters.",
+          content: "Simon was an amazing critter sitter. I wish they all were like him. I recommend him to anyone in need of a sitter.",
           rating: 2,
           created_at: new Date('July 21, 2019 11:35:00'),
           updated_at: new Date('July 21, 2019 11:35:00')
@@ -112,7 +112,7 @@ exports.seed = function(knex) {
         {
           from_id: 3,
           to_id: 5,
-          content: "Professor Meowington was a great guest who kept the room clean. He is a very considerate critter. Thank you Professor Meowington, see you again!",
+          content: "Chippers and Pippers were great guests who kept the room clean. Thank you Chippers and Pippers, see you again!",
           rating: 3,
           created_at: new Date('July 15, 2019 11:35:00'),
           updated_at: new Date('July 15, 2019 11:35:00')
@@ -120,7 +120,7 @@ exports.seed = function(knex) {
         {
           from_id: 3,
           to_id: 6,
-          content: "Doctor Scruffles was a very nice critter: Quiet, clean and respectful. Highly recommended. Thank you!",
+          content: "Simon is highly recommended. Thank you!",
           rating: 5,
           created_at: new Date('July 17, 2019 11:35:00'),
           updated_at: new Date('July 17, 2019 11:35:00')
@@ -128,7 +128,7 @@ exports.seed = function(knex) {
         {
           from_id: 3,
           to_id: 7,
-          content: "Oinker was polite and respectful of our home and belongings. You are welcome back anytime!",
+          content: "Barky Bark was polite and respectful of our home and belongings. You are welcome back anytime!",
           rating: 4,
           created_at: new Date('July 14, 2019 11:35:00'),
           updated_at: new Date('July 14, 2019 11:35:00')
@@ -136,7 +136,7 @@ exports.seed = function(knex) {
         {
           from_id: 4,
           to_id: 5,
-          content: "I had the pleasure to host Sally Mander. She made a real effort to leave the premises as clean as when she arrived. Would love to have her back!",
+          content: "I had the pleasure to host Chippers and Pippers. They made a real effort to leave the premises as clean as when they arrived. Would love to have her back!",
           rating: 4,
           created_at: new Date('July 17, 2019 11:35:00'),
           updated_at: new Date('July 17, 2019 11:35:00')
@@ -144,7 +144,7 @@ exports.seed = function(knex) {
         {
           from_id: 5,
           to_id: 6,
-          content: "It was a pleasure to welcome Pig Newton. He was very discreet, clean and respectful during his stay. He is very welcome next time!",
+          content: "It was a pleasure to have Simon as a critter sitter! He is very welcome next time!",
           rating: 3,
           created_at: new Date('July 10, 2019 11:35:00'),
           updated_at: new Date('July 10, 2019 11:35:00')
@@ -152,7 +152,7 @@ exports.seed = function(knex) {
         {
           from_id: 5,
           to_id: 7,
-          content: "Barky Bark was a great critter who highly respected house rules as well as my neighborhood. Also he cleaned up the bedroom. Highly recommended critter.",
+          content: "Barky Bark was a great critter who highly respected house rules. Also he cleaned up the bedroom. Highly recommended critter.",
           rating: 2,
           created_at: new Date('July 19, 2019 11:35:00'),
           updated_at: new Date('July 19, 2019 11:35:00')
@@ -160,7 +160,7 @@ exports.seed = function(knex) {
         {
           from_id: 6,
           to_id: 7,
-          content: "It was great hosting Princess Caroline. She was extremely easy to communicate with! Thanks so much for your stay, it was a pleasure having you!",
+          content: "It was great sitting Barky Bark. Thanks so much for your stay, it was a pleasure having you!",
           rating: 5,
           created_at: new Date('July 17, 2019 11:35:00'),
           updated_at: new Date('July 17, 2019 11:35:00')
@@ -168,7 +168,7 @@ exports.seed = function(knex) {
         {
           from_id: 6,
           to_id: 8,
-          content: "It was a pleasure hosting Meowycat. He is a very lovely critter. We would welcome him back anytime!",
+          content: "It was a pleasure hosting Hammy. He is a very lovely critter. We would welcome him back anytime!",
           rating: 4,
           created_at: new Date('July 20, 2019 11:35:00'),
           updated_at: new Date('July 20, 2019 11:35:00')
@@ -176,7 +176,7 @@ exports.seed = function(knex) {
         {
           from_id: 7,
           to_id: 8,
-          content: "Hammy was a very good critter. He was communicative, friendly, interesting to spend time with just chatting, friendly and very neat. Welcome to come back anytime.",
+          content: "Hammy was a very good critter. He was communicative, interesting to spend time with, friendly and very neat. Welcome to come back anytime.",
           rating: 5,
           created_at: new Date('July 21, 2019 11:35:00'),
           updated_at: new Date('July 21, 2019 11:35:00')
@@ -184,23 +184,55 @@ exports.seed = function(knex) {
         {
           from_id: 7,
           to_id: 9,
-          content: "It was really nice to host Arford. He is nice, friendly, communicative and independent. He is respectful of my place and kept it clean and tidy.",
+          content: "Darren is nice, friendly and communicative. He is respectful of my place and did a good job of looking after Professor Meowington.",
           rating: 4,
           created_at: new Date('July 17, 2019 11:35:00'),
           updated_at: new Date('July 17, 2019 11:35:00')
         },
         {
+          from_id: 10,
+          to_id: 9,
+          content: "Zeus loved Darren! Would use him to sit our critter again!",
+          rating: 5,
+          created_at: new Date('July 17, 2019 11:35:00'),
+          updated_at: new Date('July 17, 2019 11:35:00')
+        },
+        {
+          from_id: 8,
+          to_id: 9,
+          content: "Georgie enjoyed her stay with Darren. He was very friendly and answered all of our questions. I would be more than happy to use him again in the future.",
+          rating: 4,
+          created_at: new Date('July 18, 2019 11:35:00'),
+          updated_at: new Date('July 18, 2019 11:35:00')
+        },
+        {
           from_id: 7,
           to_id: 10,
-          content: "Oscar was a perfect critter. I'd host him again anytime!",
+          content: "Camren was a perfect critter sitter. I'd use him again anytime!",
           rating: 3,
           created_at: new Date('July 17, 2019 11:35:00'),
           updated_at: new Date('July 17, 2019 11:35:00')
         },
         {
+          from_id: 2,
+          to_id: 10,
+          content: "Zeus loved Camren! Would use him to sit our critter again!",
+          rating: 5,
+          created_at: new Date('July 17, 2019 11:35:00'),
+          updated_at: new Date('July 17, 2019 11:35:00')
+        },
+        {
+          from_id: 8,
+          to_id: 10,
+          content: "Georgie enjoyed her stay with Camren. He was very friendly and answered all of our questions. I would be more than happy to use him again in the future.",
+          rating: 4,
+          created_at: new Date('July 18, 2019 11:35:00'),
+          updated_at: new Date('July 18, 2019 11:35:00')
+        },
+        {
           from_id: 10,
           to_id: 2,
-          content: "We would like to see Zeus again. You will always be welcome to stay with us.",
+          content: "Zeus loved Lester! Would use him to sit our critter again!",
           rating: 5,
           created_at: new Date('July 17, 2019 11:35:00'),
           updated_at: new Date('July 17, 2019 11:35:00')
@@ -208,11 +240,131 @@ exports.seed = function(knex) {
         {
           from_id: 10,
           to_id: 3,
+          content: "Georgie enjoyed her stay with Lionel. He was very friendly and answered all of our questions. I would be more than happy to use him again in the future.",
+          rating: 4,
+          created_at: new Date('July 18, 2019 11:35:00'),
+          updated_at: new Date('July 18, 2019 11:35:00')
+        },
+        {
+          from_id: 7,
+          to_id: 1,
+          content: "Georgie was a perfect critter. I'd host him again anytime!",
+          rating: 3,
+          created_at: new Date('July 17, 2019 11:35:00'),
+          updated_at: new Date('July 17, 2019 11:35:00')
+        },
+        {
+          from_id: 10,
+          to_id: 1,
+          content: "We would like to see Georgie again. You will always be welcome to stay with us.",
+          rating: 5,
+          created_at: new Date('July 17, 2019 11:35:00'),
+          updated_at: new Date('July 17, 2019 11:35:00')
+        },
+        {
+          from_id: 2,
+          to_id: 1,
           content: "It was a pleasure hosting Georgie. She was very friendly and left everything exceedingly clean. I would be more than happy to have her again in the future.",
           rating: 4,
           created_at: new Date('July 18, 2019 11:35:00'),
           updated_at: new Date('July 18, 2019 11:35:00')
         },
+        {
+          from_id: 7,
+          to_id: 11,
+          content: "Rory was a perfect critter sitter. I'd use him again anytime!",
+          rating: 3,
+          created_at: new Date('July 17, 2019 11:35:00'),
+          updated_at: new Date('July 17, 2019 11:35:00')
+        },
+        {
+          from_id: 2,
+          to_id: 11,
+          content: "Zeus loved Rory! Would use him to sit our critter again!",
+          rating: 5,
+          created_at: new Date('July 17, 2019 11:35:00'),
+          updated_at: new Date('July 17, 2019 11:35:00')
+        },
+        {
+          from_id: 8,
+          to_id: 11,
+          content: "Georgie enjoyed her stay with Rory. He was very friendly and answered all of our questions. I would be more than happy to use him again in the future.",
+          rating: 4,
+          created_at: new Date('July 18, 2019 11:35:00'),
+          updated_at: new Date('July 18, 2019 11:35:00')
+        },
+        {
+          from_id: 7,
+          to_id: 12,
+          content: "Norah was a perfect critter sitter. I'd use her again anytime!",
+          rating: 3,
+          created_at: new Date('July 17, 2019 11:35:00'),
+          updated_at: new Date('July 17, 2019 11:35:00')
+        },
+        {
+          from_id: 2,
+          to_id: 12,
+          content: "Zeus loved Norah! Would use her to sit our critter again!",
+          rating: 5,
+          created_at: new Date('July 17, 2019 11:35:00'),
+          updated_at: new Date('July 17, 2019 11:35:00')
+        },
+        {
+          from_id: 8,
+          to_id: 12,
+          content: "Georgie enjoyed her stay with Norah. She was very friendly and answered all of our questions. I would be more than happy to use her again in the future.",
+          rating: 4,
+          created_at: new Date('July 18, 2019 11:35:00'),
+          updated_at: new Date('July 18, 2019 11:35:00')
+        },
+        {
+          from_id: 7,
+          to_id: 13,
+          content: "Kelly was a perfect critter sitter. I'd use her again anytime!",
+          rating: 3,
+          created_at: new Date('July 17, 2019 11:35:00'),
+          updated_at: new Date('July 17, 2019 11:35:00')
+        },
+        {
+          from_id: 2,
+          to_id: 13,
+          content: "Zeus loved Kelly! Would use her to sit our critter again!",
+          rating: 5,
+          created_at: new Date('July 17, 2019 11:35:00'),
+          updated_at: new Date('July 17, 2019 11:35:00')
+        },
+        {
+          from_id: 8,
+          to_id: 13,
+          content: "Georgie enjoyed her stay with Kelly. She was very friendly and answered all of our questions. I would be more than happy to use her again in the future.",
+          rating: 4,
+          created_at: new Date('July 18, 2019 11:35:00'),
+          updated_at: new Date('July 18, 2019 11:35:00')
+        },
+        {
+          from_id: 7,
+          to_id: 14,
+          content: "Xandra was a perfect critter sitter. I'd use her again anytime!",
+          rating: 3,
+          created_at: new Date('July 17, 2019 11:35:00'),
+          updated_at: new Date('July 17, 2019 11:35:00')
+        },
+        {
+          from_id: 2,
+          to_id: 14,
+          content: "Xandra loved Norah! Would use her to sit our critter again!",
+          rating: 5,
+          created_at: new Date('July 17, 2019 11:35:00'),
+          updated_at: new Date('July 17, 2019 11:35:00')
+        },
+        {
+          from_id: 8,
+          to_id: 14,
+          content: "Georgie enjoyed her stay with Xandra. She was very friendly and answered all of our questions. I would be more than happy to use her again in the future.",
+          rating: 4,
+          created_at: new Date('July 18, 2019 11:35:00'),
+          updated_at: new Date('July 18, 2019 11:35:00')
+        }
       ]);
     });
 };
