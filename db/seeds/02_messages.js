@@ -30,30 +30,6 @@ exports.seed = function(knex) {
           updated_at: new Date('January 17, 2019 06:24:00')
         },
         {
-          from_id: 2,
-          to_id: 3,
-          content: "Hey, I'm looking for a sitter for New Year's eve this year. Are you available?",
-          read: true,
-          created_at: new Date('December 17, 1995 03:24:00'),
-          updated_at: new Date('January 17, 2019 03:24:00')
-        },
-        {
-          from_id: 3,
-          to_id: 2,
-          content: "Sure! I don't mind. Looks like you're in my area too!",
-          read: true,
-          created_at: new Date('December 17, 1995 05:24:00'),
-          updated_at: new Date('January 17, 2019 05:24:00')
-        },
-        {
-          from_id: 2,
-          to_id: 3,
-          content: "Great! Talk to you soon! :)",
-          read: false,
-          created_at: new Date('December 17, 1995 06:24:00'),
-          updated_at: new Date('January 17, 2019 06:24:00')
-        },
-        {
           from_id: 3,
           to_id: 4,
           content: "Hey, I'm looking for a sitter for New Year's eve this year. Are you available?",
@@ -72,30 +48,6 @@ exports.seed = function(knex) {
         {
           from_id: 3,
           to_id: 4,
-          content: "Great! Talk to you soon! :)",
-          read: false,
-          created_at: new Date('December 17, 1995 06:24:00'),
-          updated_at: new Date('January 17, 2019 06:24:00')
-        },
-        {
-          from_id: 4,
-          to_id: 5,
-          content: "Hey, I'm looking for a sitter for New Year's eve this year. Are you available?",
-          read: true,
-          created_at: new Date('December 17, 1995 03:24:00'),
-          updated_at: new Date('January 17, 2019 03:24:00')
-        },
-        {
-          from_id: 5,
-          to_id: 4,
-          content: "Sure! I don't mind. Looks like you're in my area too!",
-          read: true,
-          created_at: new Date('December 17, 1995 05:24:00'),
-          updated_at: new Date('January 17, 2019 05:24:00')
-        },
-        {
-          from_id: 4,
-          to_id: 5,
           content: "Great! Talk to you soon! :)",
           read: false,
           created_at: new Date('December 17, 1995 06:24:00'),
@@ -126,30 +78,6 @@ exports.seed = function(knex) {
           updated_at: new Date('January 17, 2019 06:24:00')
         },
         {
-          from_id: 6,
-          to_id: 7,
-          content: "Hey, I'm looking for a sitter for New Year's eve this year. Are you available?",
-          read: true,
-          created_at: new Date('December 17, 1995 03:24:00'),
-          updated_at: new Date('January 17, 2019 03:24:00')
-        },
-        {
-          from_id: 7,
-          to_id: 6,
-          content: "Sure! I don't mind. Looks like you're in my area too!",
-          read: true,
-          created_at: new Date('December 17, 1995 05:24:00'),
-          updated_at: new Date('January 17, 2019 05:24:00')
-        },
-        {
-          from_id: 6,
-          to_id: 7,
-          content: "Great! Talk to you soon! :)",
-          read: false,
-          created_at: new Date('December 17, 1995 06:24:00'),
-          updated_at: new Date('January 17, 2019 06:24:00')
-        },
-        {
           from_id: 7,
           to_id: 8,
           content: "Hey, I'm looking for a sitter for New Year's eve this year. Are you available?",
@@ -168,30 +96,6 @@ exports.seed = function(knex) {
         {
           from_id: 7,
           to_id: 8,
-          content: "Great! Talk to you soon! :)",
-          read: false,
-          created_at: new Date('December 17, 1995 06:24:00'),
-          updated_at: new Date('January 17, 2019 06:24:00')
-        },
-        {
-          from_id: 8,
-          to_id: 9,
-          content: "Hey, I'm looking for a sitter for New Year's eve this year. Are you available?",
-          read: true,
-          created_at: new Date('December 17, 1995 03:24:00'),
-          updated_at: new Date('January 17, 2019 03:24:00')
-        },
-        {
-          from_id: 9,
-          to_id: 8,
-          content: "Sure! I don't mind. Looks like you're in my area too!",
-          read: true,
-          created_at: new Date('December 17, 1995 05:24:00'),
-          updated_at: new Date('January 17, 2019 05:24:00')
-        },
-        {
-          from_id: 8,
-          to_id: 9,
           content: "Great! Talk to you soon! :)",
           read: false,
           created_at: new Date('December 17, 1995 06:24:00'),
@@ -222,30 +126,6 @@ exports.seed = function(knex) {
           updated_at: new Date('January 17, 2019 06:24:00')
         },
         {
-          from_id: 10,
-          to_id: 11,
-          content: "Hey, I'm looking for a sitter for New Year's eve this year. Are you available?",
-          read: true,
-          created_at: new Date('December 17, 1995 03:24:00'),
-          updated_at: new Date('January 17, 2019 03:24:00')
-        },
-        {
-          from_id: 11,
-          to_id: 10,
-          content: "Sure! I don't mind. Looks like you're in my area too!",
-          read: true,
-          created_at: new Date('December 17, 1995 05:24:00'),
-          updated_at: new Date('January 17, 2019 05:24:00')
-        },
-        {
-          from_id: 10,
-          to_id: 11,
-          content: "Great! Talk to you soon! :)",
-          read: false,
-          created_at: new Date('December 17, 1995 06:24:00'),
-          updated_at: new Date('January 17, 2019 06:24:00')
-        },
-        {
           from_id: 11,
           to_id: 12,
           content: "Hey, I'm looking for a sitter for New Year's eve this year. Are you available?",
@@ -270,30 +150,6 @@ exports.seed = function(knex) {
           updated_at: new Date('January 17, 2019 06:24:00')
         },
         {
-          from_id: 12,
-          to_id: 13,
-          content: "Hey, I'm looking for a sitter for New Year's eve this year. Are you available?",
-          read: true,
-          created_at: new Date('December 17, 1995 03:24:00'),
-          updated_at: new Date('January 17, 2019 03:24:00')
-        },
-        {
-          from_id: 13,
-          to_id: 12,
-          content: "Sure! I don't mind. Looks like you're in my area too!",
-          read: true,
-          created_at: new Date('December 17, 1995 05:24:00'),
-          updated_at: new Date('January 17, 2019 05:24:00')
-        },
-        {
-          from_id: 12,
-          to_id: 13,
-          content: "Great! Talk to you soon! :)",
-          read: false,
-          created_at: new Date('December 17, 1995 06:24:00'),
-          updated_at: new Date('January 17, 2019 06:24:00')
-        },
-        {
           from_id: 13,
           to_id: 14,
           content: "Hey, I'm looking for a sitter for New Year's eve this year. Are you available?",
@@ -312,30 +168,6 @@ exports.seed = function(knex) {
         {
           from_id: 13,
           to_id: 14,
-          content: "Great! Talk to you soon! :)",
-          read: false,
-          created_at: new Date('December 17, 1995 06:24:00'),
-          updated_at: new Date('January 17, 2019 06:24:00')
-        },
-        {
-          from_id: 14,
-          to_id: 15,
-          content: "Hey, I'm looking for a sitter for New Year's eve this year. Are you available?",
-          read: true,
-          created_at: new Date('December 17, 1995 03:24:00'),
-          updated_at: new Date('January 17, 2019 03:24:00')
-        },
-        {
-          from_id: 15,
-          to_id: 14,
-          content: "Sure! I don't mind. Looks like you're in my area too!",
-          read: true,
-          created_at: new Date('December 17, 1995 05:24:00'),
-          updated_at: new Date('January 17, 2019 05:24:00')
-        },
-        {
-          from_id: 14,
-          to_id: 15,
           content: "Great! Talk to you soon! :)",
           read: false,
           created_at: new Date('December 17, 1995 06:24:00'),
