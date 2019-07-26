@@ -46,9 +46,9 @@ exports.seed = function(knex) {
           last_name: "Schmidt",
           email: "Jude63@hotmail.com",
           phone_number: "416-699-4610",
-          avatar: "https://randomuser.me/api/portraits/men/66.jpg",
-          postal_code: "M4L 1H8",
-          street_address: "1974 Queen St E",
+          avatar: "https://randomuser.me/api/portraits/men/54.jpg",
+          postal_code: "M4E 3X9",
+          street_address: "59 Belleville St",
           city: "Toronto",
           bio: "What do dogs eat at the movies? Pup-eroni pizza and pup-corn!"
         },
@@ -59,20 +59,20 @@ exports.seed = function(knex) {
           email: "Haley4@yahoo.ca",
           phone_number: "416-698-9608",
           avatar: "https://randomuser.me/api/portraits/women/8.jpg",
-          postal_code: "M4E 3B4",
-          street_address: "42 Balsam Ave",
+          postal_code: "M3C 4A1",
+          street_address: "5 Wilket Creek Rd",
           city: "Toronto",
           bio: "No matter how bad of a day you have, pets are there to greet you and make you feel better."
         },
         {
           role: 2,
-          first_name: "Simeon",
+          first_name: "Simon",
           last_name: "Homenick",
           email: "Simeon_Homenick15@hotmail.com",
           phone_number: "416-699-3028",
           avatar: "https://randomuser.me/api/portraits/men/3.jpg",
-          postal_code: "M4L 3T6",
-          street_address: "258 Waverley Rd",
+          postal_code: "M4J 1K5",
+          street_address: "10 Hazelwood Ave",
           city: "Toronto",
           bio: "I love animals because they're amazing!"
         },
@@ -83,8 +83,8 @@ exports.seed = function(knex) {
           email: "Reid52@yahoo.ca",
           phone_number: "416-698-9098",
           avatar: "https://randomuser.me/api/portraits/men/90.jpg",
-          postal_code: "M4C 3H9",
-          street_address: "101 Hillingdon Ave",
+          postal_code: "M1L 2R9",
+          street_address: "154 Pitt Avenue",
           city: "Toronto",
           bio: "Until one has loved an animal, a part of one's soul remains unawakened."
         },
@@ -94,26 +94,26 @@ exports.seed = function(knex) {
           last_name: "Satterfield",
           email: "Zoe50@hotmail.com",
           phone_number: "416-699-0791",
-          avatar: "https://randomuser.me/api/portraits/women/69.jpg",
-          postal_code: "M4E 2W4",
-          street_address: "24 Hammersmith Ave",
+          avatar: "https://randomuser.me/api/portraits/women/50.jpg",
+          postal_code: "M4H 1H4",
+          street_address: "16 Thorncliffe Park Dr",
           city: "Toronto",
           bio: "My cat loves to drive my car. It's a Furrari!"
         },
         {
-          role: 3,
+          role: 2,
           first_name: "Darren",
           last_name: "Collins",
           email: "Darren.Collins87@gmail.com",
           phone_number: "416-698-5039",
           avatar: "https://randomuser.me/api/portraits/men/43.jpg",
-          postal_code: "M4L 3R8",
-          street_address: "102 Elmer Ave",
+          postal_code: "M6H 4B2",
+          street_address: "997 Dufferin St",
           city: "Toronto",
           bio: "Pigs are the best! They're playful, friendly, sensitive, and intelligent animals. And they will play ball with you!"
         },
         {
-          role: 1,
+          role: 2,
           first_name: "Camren",
           last_name: "Zulauf",
           email: "Camren.Zulauf19@gmail.com",
@@ -123,6 +123,66 @@ exports.seed = function(knex) {
           street_address: "304 Berkeley St",
           city: "Toronto",
           bio: "The truth I do not stretch or shove When I state that the dog is full of love. I’ve also found, by actual test, A wet dog is the lovingest."
+        },
+        {
+          role: 2,
+          first_name: "Rory",
+          last_name: "Cardenas",
+          email: "Rory.Cardenas19@gmail.com",
+          phone_number: "416-929-4598",
+          avatar: "https://randomuser.me/api/portraits/men/72.jpg",
+          postal_code: "M6C 2S1",
+          street_address: "87 Kenwood Ave",
+          city: "Toronto",
+          bio: "The early bird gets the worm, but the second mouse gets the cheese."
+        },
+        {
+          role: 2,
+          first_name: "Norah",
+          last_name: "Graham",
+          email: "Norah.Graham@gmail.com",
+          phone_number: "416-929-4598",
+          avatar: "https://randomuser.me/api/portraits/women/89.jpg",
+          postal_code: "M4G 3G7",
+          street_address: "79 Donegall Dr",
+          city: "Toronto",
+          bio: "Oh?! Where do I start?! Well, I love animals because: They are brilliant company."
+        },
+        {
+          role: 2,
+          first_name: "Kelly",
+          last_name: "Vaughn",
+          email: "Kelly.Vaughn19@gmail.com",
+          phone_number: "416-929-4598",
+          avatar: "https://randomuser.me/api/portraits/women/17.jpg",
+          postal_code: "M4C 5A4",
+          street_address: "8 Newman Ave",
+          city: "Toronto",
+          bio: " I mean, I love dogs and cats and horses but I hate cockroaches and centipedes!"
+        },
+        {
+          role: 2,
+          first_name: "Xandra",
+          last_name: "Arnold",
+          email: "Xandra Arnold@gmail.com",
+          phone_number: "416-929-4598",
+          avatar: "https://randomuser.me/api/portraits/women/26.jpg",
+          postal_code: "M4B 3N7",
+          street_address: "17 Guillet St",
+          city: "Toronto",
+          bio: "I love pets because they give unconditional love and are always willing to please you."
+        },
+        {
+          role: 2,
+          first_name: "Irene",
+          last_name: "Middleton",
+          email: "Irene.Middleton19@gmail.com",
+          phone_number: "416-929-4598",
+          avatar: "https://randomuser.me/api/portraits/women/36.jpg",
+          postal_code: "M6B 1Y1",
+          street_address: "160 Hillmount Ave",
+          city: "Toronto",
+          bio: "There is nothing like the love of a pet!"
         }
       ]);
     })
@@ -135,13 +195,18 @@ exports.seed = function(knex) {
             (ST_SetSRID(ST_MakePoint(-79.3049261, 43.6779947), 4326), 1), \
             (ST_SetSRID(ST_MakePoint(-79.4160545, 43.7295661), 4326), 2), \
             (ST_SetSRID(ST_MakePoint(-79.3983443, 43.6878955), 4326), 3), \
-            (ST_SetSRID(ST_MakePoint(-79.3035411, 43.669918), 4326), 4), \
-            (ST_SetSRID(ST_MakePoint(-79.2919107, 43.6711546), 4326), 5), \
-            (ST_SetSRID(ST_MakePoint(-79.3052774, 43.6743661), 4326), 6), \
-            (ST_SetSRID(ST_MakePoint(-79.3222937, 43.6817611), 4326), 7), \
-            (ST_SetSRID(ST_MakePoint(-79.2958054, 43.6687056), 4326), 8), \
-            (ST_SetSRID(ST_MakePoint(-79.3074703, 43.6728731), 4326), 9), \
-            (ST_SetSRID(ST_MakePoint(-79.3702709, 43.6602683), 4326), 10) \
+            (ST_SetSRID(ST_MakePoint(-79.2910402, 43.6869824), 4326), 4), \
+            (ST_SetSRID(ST_MakePoint(-79.334758, 43.719269), 4326), 5), \
+            (ST_SetSRID(ST_MakePoint(-79.343914, 43.678392), 4326), 6), \
+            (ST_SetSRID(ST_MakePoint(-79.2956429, 43.7084217), 4326), 7), \
+            (ST_SetSRID(ST_MakePoint(-79.3518781, 43.703921), 4326), 8), \
+            (ST_SetSRID(ST_MakePoint(-79.434796, 43.659224), 4326), 9), \
+            (ST_SetSRID(ST_MakePoint(-79.3702709, 43.6602683), 4326), 10), \
+            (ST_SetSRID(ST_MakePoint(-79.4234175, 43.6852409), 4326), 11), \
+            (ST_SetSRID(ST_MakePoint(-79.3763089, 43.7071168), 4326), 12), \
+            (ST_SetSRID(ST_MakePoint(-79.301626, 43.6927976), 4326), 13), \
+            (ST_SetSRID(ST_MakePoint(-79.3065757, 43.715468), 4326), 14), \
+            (ST_SetSRID(ST_MakePoint(-79.4401732, 43.7092055), 4326), 15) \
         ) as c(home_coords, id) \
         where c.id = u.id'
       )

@@ -10,14 +10,6 @@ exports.seed = function(knex) {
           pet_type_id: 1
         },
         {
-          user_id: 1,
-          pet_type_id: 2
-        },
-        {
-          user_id: 1,
-          pet_type_id: 3
-        },
-        {
           user_id: 2,
           pet_type_id: 1
         },
@@ -27,7 +19,19 @@ exports.seed = function(knex) {
         },
         {
           user_id: 2,
+          pet_type_id: 3
+        },
+        {
+          user_id: 2,
+          pet_type_id: 4
+        },
+        {
+          user_id: 2,
           pet_type_id: 5
+        },
+        {
+          user_id: 3,
+          pet_type_id: 1
         },
         {
           user_id: 3,
@@ -47,31 +51,19 @@ exports.seed = function(knex) {
         },
         {
           user_id: 5,
-          pet_type_id: 1
-        },
-        {
-          user_id: 5,
           pet_type_id: 2
         },
         {
-          user_id: 5,
+          user_id: 6,
+          pet_type_id: 1
+        },
+        {
+          user_id: 6,
           pet_type_id: 3
         },
         {
           user_id: 6,
-          pet_type_id: 1
-        },
-        {
-          user_id: 6,
-          pet_type_id: 4
-        },
-        {
-          user_id: 6,
           pet_type_id: 5
-        },
-        {
-          user_id: 7,
-          pet_type_id: 1
         },
         {
           user_id: 7,
@@ -104,6 +96,62 @@ exports.seed = function(knex) {
         {
           user_id: 10,
           pet_type_id: 4
+        },
+        {
+          user_id: 11,
+          pet_type_id: 1
+        },
+        {
+          user_id: 11,
+          pet_type_id: 2
+        },
+        {
+          user_id: 12,
+          pet_type_id: 1
+        },
+        {
+          user_id: 12,
+          pet_type_id: 2
+        },
+        {
+          user_id: 12,
+          pet_type_id: 3
+        },
+        {
+          user_id: 12,
+          pet_type_id: 4
+        },
+        {
+          user_id: 13,
+          pet_type_id: 1
+        },
+        {
+          user_id: 13,
+          pet_type_id: 2
+        },
+        {
+          user_id: 13,
+          pet_type_id: 3
+        },
+        {
+          user_id: 14,
+          pet_type_id: 1
+        },
+        {
+          user_id: 15,
+          pet_type_id: 2
+        },
+        {
+          user_id: 15,
+          pet_type_id: 3
+        },
+        {
+          user_id: 15,
+          pet_type_id: 4
+        },
+        {
+          user_id: 15,
+          pet_type_id: 5
         }
       ]);
     });

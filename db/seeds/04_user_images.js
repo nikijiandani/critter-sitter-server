@@ -23,11 +23,11 @@ exports.seed = function(knex) {
         },
         {
           user_id: 2,
-          image: "https://placedog.net/500/400?id=30"
+          image: "https://placekitten.com/500/400"
         },
         {
           user_id: 2,
-          image: "https://placedog.net/500/400?id=2"
+          image: "https://images.unsplash.com/photo-1509907902456-5520a36c0fe8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
         },
         {
           user_id: 3,
@@ -124,6 +124,66 @@ exports.seed = function(knex) {
         {
           user_id: 10,
           image: "https://placedog.net/500/400?id=26"
+        },
+        {
+          user_id: 11,
+          image: "https://placedog.net/500/400?id=27"
+        },
+        {
+          user_id: 11,
+          image: "https://placedog.net/500/400?id=28"
+        },
+        {
+          user_id: 11,
+          image: "https://placedog.net/500/400?id=29"
+        },
+        {
+          user_id: 12,
+          image: "https://placedog.net/500/400?id=30"
+        },
+        {
+          user_id: 12,
+          image: "https://placedog.net/500/400?id=31"
+        },
+        {
+          user_id: 12,
+          image: "https://placedog.net/500/400?id=32"
+        },
+        {
+          user_id: 13,
+          image: "https://placedog.net/500/400?id=33"
+        },
+        {
+          user_id: 13,
+          image: "https://placedog.net/500/400?id=34"
+        },
+        {
+          user_id: 13,
+          image: "https://placedog.net/500/400?id=35"
+        },
+        {
+          user_id: 14,
+          image: "https://placedog.net/500/400?id=36"
+        },
+        {
+          user_id: 14,
+          image: "https://placedog.net/500/400?id=37"
+        },
+        {
+          user_id: 14,
+          image: "https://placedog.net/500/400?id=38"
+        },
+        {
+          user_id: 15,
+          image: "https://placedog.net/500/400?id=39"
+        },
+        {
+          user_id: 15,
+          image: "https://placedog.net/500/400?id=40"
+        },
+        {
+          user_id: 15,
+          image: "https://placedog.net/500/400?id=41"
         }
       ]);
     });
