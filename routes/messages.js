@@ -26,8 +26,7 @@ module.exports = (knex) => {
         LEFT JOIN users AS uf \
           ON mf.to_id = uf.id \
         WHERE mf.from_id = ? \
-        ORDER BY created_at DESC, \
-        first_name ASC "
+        ORDER BY created_at "
 
       const qry = knex
         .raw(qryString, [req.query.user_id, req.query.user_id])
