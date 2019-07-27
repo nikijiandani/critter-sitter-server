@@ -15,7 +15,7 @@ exports.seed = function(knex) {
         },
         {
           name: "Bird",
-          icon: "🐦"
+          icon: "🦜"
         },
         {
           name: "Rabbit",
