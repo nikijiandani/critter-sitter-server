@@ -19,12 +19,12 @@ module.exports = (knex) => {
               INNER JOIN pet_types AS pt \
               ON upt.pet_type_id=pt.id \
             WHERE upt.user_id = u.id) spt \
-          ) as sitter_pet_types, \
+          ) AS sitter_pet_types, \
         (SELECT json_agg(rev) FROM \
-            (SELECT rv.from_id, ru.first_name, rv.created_at, rv.rating, rv.content \
-              FROM reviews AS rv \
-                INNER JOIN users AS ru \
-                ON rv.from_id=ru.id \
+          (SELECT rv.from_id, ru.first_name, rv.created_at, rv.rating, rv.content \
+            FROM reviews AS rv \
+              INNER JOIN users AS ru \
+              ON rv.from_id=ru.id \
             WHERE rv.to_id = u.id \
             ORDER BY rv.created_at DESC) rev \
         ) as reviews, \
@@ -33,11 +33,16 @@ module.exports = (knex) => {
             FROM user_images img \
             WHERE img.user_id = u.id) im \
           ) as images, \
-          (SELECT ROUND(AVG(r.rating),1) AS avg_rating \
-            FROM reviews AS r \
-            WHERE r.to_id = u.id \
-            GROUP BY r.to_id \
-          ) \
+        (SELECT ROUND(AVG(r.rating),1) AS avg_rating \
+          FROM reviews AS r \
+          WHERE r.to_id = u.id \
+          GROUP BY r.to_id \
+        ), \
+        (SELECT COUNT(r.rating) AS total_ratings \
+          FROM reviews AS r \
+          WHERE r.to_id = u.id \
+          GROUP BY r.to_id \
+        ) \
       FROM users AS u \
       WHERE 1 = 1 "
 
