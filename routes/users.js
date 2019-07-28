@@ -21,7 +21,7 @@ module.exports = (knex) => {
             WHERE upt.user_id = u.id) spt \
           ) AS sitter_pet_types, \
         (SELECT json_agg(rev) FROM \
-          (SELECT rv.from_id, ru.first_name, rv.created_at, rv.rating, rv.content \
+          (SELECT rv.from_id, ru.first_name, ru.last_name, ru.avatar, rv.created_at, rv.rating, rv.content \
             FROM reviews AS rv \
               INNER JOIN users AS ru \
               ON rv.from_id=ru.id \
