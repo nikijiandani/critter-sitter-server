@@ -13,14 +13,14 @@ module.exports = (knex) => {
     if (req.query.user_id) {
 
       const qryString = " \
-        SELECT mt.from_id AS other_user_id, ut.first_name, ut.last_name, mt.read, \
+        SELECT mt.from_id AS other_user_id, ut.first_name, ut.last_name, mt.read, ut.avatar, \
           mt.created_at, mt.content, 'touser' AS msg_dir \
         FROM messages AS mt \
         LEFT JOIN users AS ut \
           ON mt.from_id = ut.id \
         WHERE mt.to_id = ? \
         UNION ALL \
-        SELECT mf.to_id AS other_user_id, uf.first_name, uf.last_name, mf.read, \
+        SELECT mf.to_id AS other_user_id, uf.first_name, uf.last_name, mf.read, uf.avatar, \
           mf.created_at, mf.content, 'fromuser' AS msgdir \
         FROM messages AS mf \
         LEFT JOIN users AS uf \
