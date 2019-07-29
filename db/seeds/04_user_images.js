@@ -30,6 +30,14 @@ exports.seed = function(knex) {
           image: "https://images.unsplash.com/photo-1509907902456-5520a36c0fe8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
         },
         {
+          user_id: 2,
+          image: "https://images.unsplash.com/photo-1535241749838-299277b6305f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=984&q=80"
+        }, 
+        {
+          user_id: 2,
+          image: "https://images.unsplash.com/photo-1518001589401-1743b61d1def?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
+        },               
+        {
           user_id: 3,
           image: "https://placedog.net/500/400?id=3"
         },
