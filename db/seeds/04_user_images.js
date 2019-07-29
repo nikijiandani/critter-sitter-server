@@ -35,7 +35,7 @@ exports.seed = function(knex) {
         }, 
         {
           user_id: 2,
-          image: "https://images.unsplash.com/photo-1518001589401-1743b61d1def?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
+          image: "https://images.unsplash.com/photo-1469532804526-98aa275b657c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2098&q=80"
         },               
         {
           user_id: 3,
