@@ -22,7 +22,7 @@ exports.seed = function(knex) {
           last_name: "Heathcote",
           email: "Lester35@yahoo.ca",
           phone_number: "416-021-1358",
-          avatar: "https://randomuser.me/api/portraits/men/87.jpg",
+          avatar: "https://randomuser.me/api/portraits/men/86.jpg",
           postal_code: "M5M 1W4",
           street_address: "315 St Germain Ave",
           city: "Toronto",

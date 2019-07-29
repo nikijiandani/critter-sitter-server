@@ -71,14 +71,6 @@ exports.seed = function(knex) {
         },
         {
           from_id: 2,
-          to_id: 3,
-          content: "Lester was very nice, polite and respectful of our home. You are welcome to sit our critter anytime!",
-          rating: 4,
-          created_at: new Date('July 17, 2019 11:35:00'),
-          updated_at: new Date('July 17, 2019 11:35:00')
-        },
-        {
-          from_id: 2,
           to_id: 4,
           content: "Kitty Kitty Kitty followed the rules of the apartment well and was kind. I recommend her to other sitters. I welcome him anytime. Thank you Scooby.",
           rating: 3,
