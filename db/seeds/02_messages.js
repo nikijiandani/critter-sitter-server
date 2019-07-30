@@ -8,26 +8,50 @@ exports.seed = function(knex) {
         {
           from_id: 1,
           to_id: 2,
-          content: "Hey, I'm looking for a sitter for New Year's eve this year. Are you available?",
+          content: "Hey, I'm looking for a dog sitter for this weekend. Are you available on both Saturday and Sunday?",
           read: true,
-          created_at: new Date('December 17, 1995 03:24:00'),
-          updated_at: new Date('January 17, 2019 03:24:00')
+          created_at: new Date('July 30, 2019 12:24:00'),
+          updated_at: new Date('July 30, 2019 12:24:00')
         },
         {
           from_id: 2,
           to_id: 1,
-          content: "Sure! I don't mind. Looks like you're in my area too!",
+          content: "Sure! I don't mind. What kind of dog do you have?",
           read: true,
-          created_at: new Date('December 17, 1995 05:24:00'),
-          updated_at: new Date('January 17, 2019 05:24:00')
+          created_at: new Date('July 30, 2019 12:30:00'),
+          updated_at: new Date('July 30, 2019 12:30:00')
         },
         {
           from_id: 1,
           to_id: 2,
-          content: "Great! Talk to you soon! :)",
+          content: "Georgie is a spitz. How much do you charge?",
           read: false,
-          created_at: new Date('December 17, 1995 06:24:00'),
-          updated_at: new Date('January 17, 2019 06:24:00')
+          created_at: new Date('July 30, 2019 12:35:00'),
+          updated_at: new Date('July 30, 2019 12:35:00')
+        },
+        {
+          from_id: 2,
+          to_id: 1,
+          content: "How about 70 dollars for the weekend",
+          read: false,
+          created_at: new Date('July 30, 2019 12:45:00'),
+          updated_at: new Date('July 30, 2019 12:45:00')
+        },
+        {
+          from_id: 1,
+          to_id: 2,
+          content: "Sounds good! Please come to 500 Kingston Rd at noon on Saturday.",
+          read: false,
+          created_at: new Date('July 30, 2019 12:55:00'),
+          updated_at: new Date('July 30, 2019 12:55:00')
+        },
+        {
+          from_id: 2,
+          to_id: 1,
+          content: "Sure! See you on Saturday.",
+          read: false,
+          created_at: new Date('July 30, 2019 12:58:00'),
+          updated_at: new Date('July 30, 2019 12:58:00')
         },
         {
           from_id: 3,

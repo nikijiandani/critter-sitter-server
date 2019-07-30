@@ -26,7 +26,7 @@ exports.seed = function(knex) {
           postal_code: "M5M 1W4",
           street_address: "315 St Germain Ave",
           city: "Toronto",
-          bio: "I love all animals!"
+          bio: "What do dogs eat at the movies? Pup-eroni pizza and pup-corn!"
         },
         {
           role: 2,
@@ -50,7 +50,7 @@ exports.seed = function(knex) {
           postal_code: "M4E 3X9",
           street_address: "59 Belleville St",
           city: "Toronto",
-          bio: "What do dogs eat at the movies? Pup-eroni pizza and pup-corn!"
+          bio: "I love all animals!"
         },
         {
           role: 1,
