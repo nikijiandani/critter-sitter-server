@@ -22,14 +22,6 @@ exports.seed = function(knex) {
           updated_at: new Date('July 30, 2019 12:30:00')
         },
         {
-          from_id: 1,
-          to_id: 2,
-          content: "Georgie is a spitz. How much do you charge?",
-          read: false,
-          created_at: new Date('July 30, 2019 12:35:00'),
-          updated_at: new Date('July 30, 2019 12:35:00')
-        },
-        {
           from_id: 3,
           to_id: 4,
           content: "Hey, I'm looking for a sitter for New Year's eve this year. Are you available?",
