@@ -22,38 +22,6 @@ exports.seed = function(knex) {
           updated_at: new Date('July 30, 2019 12:30:00')
         },
         {
-          from_id: 1,
-          to_id: 2,
-          content: "Georgie is a spitz. How much do you charge?",
-          read: false,
-          created_at: new Date('July 30, 2019 12:35:00'),
-          updated_at: new Date('July 30, 2019 12:35:00')
-        },
-        {
-          from_id: 2,
-          to_id: 1,
-          content: "How about 70 dollars for the weekend",
-          read: false,
-          created_at: new Date('July 30, 2019 12:45:00'),
-          updated_at: new Date('July 30, 2019 12:45:00')
-        },
-        {
-          from_id: 1,
-          to_id: 2,
-          content: "Sounds good! Please come to 500 Kingston Rd at noon on Saturday.",
-          read: false,
-          created_at: new Date('July 30, 2019 12:55:00'),
-          updated_at: new Date('July 30, 2019 12:55:00')
-        },
-        {
-          from_id: 2,
-          to_id: 1,
-          content: "Sure! See you on Saturday.",
-          read: false,
-          created_at: new Date('July 30, 2019 12:58:00'),
-          updated_at: new Date('July 30, 2019 12:58:00')
-        },
-        {
           from_id: 3,
           to_id: 4,
           content: "Hey, I'm looking for a sitter for New Year's eve this year. Are you available?",
