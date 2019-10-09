@@ -1,6 +1,6 @@
 # Critter Sitter Server
 
-This project was created as a back-end api for the critter sitter app.
+This project was created as a back-end api for the critter sitter app using Node/Express, postgreSQL for the database with postGIS for spacial querying.
 
 ## Project Setup
 
@@ -22,3 +22,11 @@ Fork and clone this repository
 
 - Node 5.10.x or above
 - NPM 3.8.x or above
+
+## If deploying to Heroku 
+
+`heroku run knex migrate:latest` runs migration on the heroku database in the cloud.
+
+`heroku run knex seed:run` puts seed data in heroku database.
+
+`git push heroku master` to push to heroku.
