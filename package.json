@@ -22,6 +22,9 @@
     "pg": "^6.0.2",
     "pg-postgis-types": "^3.0.0"
   },
+  "engines": {
+    "node": "10.16.0"
+  },
   "devDependencies": {
     "nodemon": "^1.9.2",
     "dotenv": "^2.0.0"
