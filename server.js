@@ -1,5 +1,6 @@
 "use strict";
 
+//use dotenv for development
 // require("dotenv").config();
 
 const PORT = process.env.PORT || 8080;
@@ -7,6 +8,8 @@ const ENV = process.env.NODE_ENV || "development";
 const express = require("express");
 const app = express();
 
+const helmet = require("helmet");
+const compression = require("compression");
 const knexConfig = require("./knexfile");
 const knex = require("knex")(knexConfig[ENV]);
 const morgan = require("morgan");
@@ -27,6 +30,8 @@ const usersRoute = require("./routes/users");
 const messagesRoute = require("./routes/messages");
 const reviewsRoute = require("./routes/reviews");
 
+app.use(compression());
+app.use(helmet());
 app.use(cors());
 
 // Load the logger first so all (static) HTTP requests are logged to STDOUT
