@@ -32,7 +32,11 @@ const reviewsRoute = require("./routes/reviews");
 
 app.use(compression());
 app.use(helmet());
-app.use(cors());
+const isProduction = process.env.NODE_ENV === "production";
+const origin = {
+  origin: isProduction ? "http://localhost:3000" : "*"
+};
+app.use(cors(origin));
 
 // Load the logger first so all (static) HTTP requests are logged to STDOUT
 // 'dev' = Concise output colored by response status for development use.
