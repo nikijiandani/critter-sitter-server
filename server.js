@@ -16,6 +16,7 @@ const morgan = require("morgan");
 const knexLogger = require("knex-logger");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+const rateLimit = require("express-rate-limit");
 
 // this must be before other app.use statements
 app.use(
@@ -37,6 +38,13 @@ const origin = {
   origin: isProduction ? "http://localhost:3000" : "*"
 };
 app.use(cors(origin));
+
+const limiter = rateLimit({
+  windowMs: 1 * 60 * 1000, // 1 minute
+  max: 5 // 5 requests
+});
+
+app.use(limiter);
 
 // Load the logger first so all (static) HTTP requests are logged to STDOUT
 // 'dev' = Concise output colored by response status for development use.
