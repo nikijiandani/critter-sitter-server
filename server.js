@@ -35,7 +35,7 @@ app.use(compression());
 app.use(helmet());
 const isProduction = process.env.NODE_ENV === "production";
 const origin = {
-  origin: isProduction ? "http://localhost:3000" : "*"
+  origin: isProduction ? "http://localhost:5000" : "*"
 };
 app.use(cors(origin));
 
